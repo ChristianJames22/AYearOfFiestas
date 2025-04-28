@@ -161,28 +161,62 @@ html, body {
 
 @media (max-width: 768px) {
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 20px;
-    gap: 10px;
-  }
-  .nav-links.active {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    border-radius: 12px;
+    padding: 20px 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    gap: 20px;
+    transition: all 0.3s ease;
   }
-  .hamburger {
-    display: block;
+
+  .nav-links a, .dropbtn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
   }
+
+  .nav-links a:hover, .dropbtn:hover {
+    background: rgba(255, 230, 0, 0.2);
+    color: #ffe600;
+  }
+
   .dropdown-content {
-    position: static;
-    max-height: 200px;
+    width: 100%;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    padding: 10px 0;
+    max-height: 250px;
     overflow-y: auto;
   }
+
+  .dropdown-content a {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .login-icon {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    color: white;
+  }
 }
+
 
 /* Hero Section */
 /* Hero Container */
@@ -814,4 +848,44 @@ button:hover {
 /* Show Dropdown */
 .dropdown.active .dropdown-content {
   display: flex;
+}
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .feature-card {
+    flex: 1 1 80%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
+/* Responsive for Festival Grid and Cards */
+@media (max-width: 768px) {
+  .festival-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .festival-card {
+    flex: 1 1 80%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .festival-card {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
 }
