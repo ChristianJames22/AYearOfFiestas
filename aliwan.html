@@ -3,26 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aliwan Fiesta</title>
+  <title>Aliwan Fiesta - A Year of Fiestas</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Aliwan Fiesta Hero Title -->
   <div class="container">
     <h1>Aliwan Fiesta</h1>
-    <h2>Cultural Center of the Philippines, Pasay – April</h2>
-    <img src="images/aliwan.jpg" alt="Aliwan Fiesta Image" />
+    <h2>Pasay City, Manila – April</h2>
 
-    <p>
-      Aliwan Fiesta is dubbed the "Mother of All Fiestas" in the Philippines. Held annually in April, it brings together the best cultural festivals from across the country in one grand competition in Metro Manila.
-    </p>
+    <div class="hero-image">
+      <img src="images/aliwan1.jpg" alt="Aliwan Fiesta Parade">
+    </div>
 
+    <section class="section">
     <p>
-      The event features street dancing, floats adorned with local products, and beauty pageants. Participants represent their provinces, showcasing the rich diversity and traditions of their region through music, costume, and choreography.
+      The <strong>Aliwan Fiesta</strong> is the “Festival of Festivals” in the Philippines. It brings together winning contingents from various regional fiestas to compete in dance parades, beauty pageants, and float competitions — a true spectacle of Filipino culture and pride.
     </p>
-
-    <p>
-      Aliwan Fiesta aims to promote cultural tourism and national pride, uniting Filipinos in a spectacular celebration of heritage and creativity.
-    </p>
+  </section>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎡 Festival Showcase</h4>
+          <p>Aliwan features the best street dancers, floats, and festivals from all over the Philippines in one grand celebration.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>👑 Reyna ng Aliwan</h4>
+          <p>A prestigious beauty pageant where candidates represent their festivals and communities with grace and beauty.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Street Dancing Competition</h4>
+          <p>Regional dance groups perform vibrant cultural dances in colorful costumes, competing for the top prize.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🚛 Float Parade</h4>
+          <p>Giant, intricately designed floats themed around Philippine festivals parade through Roxas Boulevard, Manila.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Cultural Fusion</h4>
+          <p>Aliwan Fiesta blends Luzon, Visayas, and Mindanao cultures into a single event celebrating national identity.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Nationwide Fame</h4>
+          <p>Aliwan Fiesta is known as the biggest gathering of Filipino festivals, celebrated with pride across the country.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Aliwan -->
+  <div class="container">
+    <h2>Highlights of Aliwan Fiesta</h2>
+    <p>
+      Watch the colorful street dance competition, the glamorous Reyna ng Aliwan pageant, and the stunning float parade — all combining into a lively and unforgettable showcase of Philippine festivals.
+    </p>
+
+    <div class="gallery">
+      <img src="images/aliwan2.jpg" alt="Dance Competition" />
+      <img src="images/aliwan3.jpg" alt="Float Parade" />
+      <img src="images/aliwan4.jpg" alt="Reyna ng Aliwan" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of Aliwan</h2>
+        <p>Founded in 2003, Aliwan Fiesta was created to promote tourism, cultural preservation, and regional pride by showcasing local festivals to a national and international audience.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historyaliwan.jpg" alt="History of Aliwan Fiesta">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>The Grand Parade</h2>
+        <p>The grand parade stretches along Roxas Boulevard, with floats, dance troupes, and pageant contestants all presenting their best for the judges and spectators.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/grandparadealiwan.jpg" alt="Grand Parade">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Celebrations</h2>
+        <p>Today, Aliwan Fiesta remains a symbol of Filipino unity, creativity, and pride — bringing the beauty and diversity of the Philippines into one grand fiesta for all to enjoy.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernaliwan.jpg" alt="Modern Aliwan Fiesta">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Aliwan -->
+  <section class="section">
+    <h2>Experience Aliwan Fiesta in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zHuTqBFnxAI" title="Aliwan Fiesta Highlights" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>
