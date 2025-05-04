@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - A Year of Fiestas</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra minor enhancements specific for dashboard */
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: #492c2cb9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid darkgoldenrod;
+    }
+    .profile-info h2 {
+      margin: 0;
+      font-size: 28px;
+      color: #f8ef00;
+    }
+    .profile-info p {
+      margin: 5px 0;
+      color: #ffd504;
+    }
+    .see-more-btn {
+      background-color: darkgoldenrod;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .see-more-btn:hover {
+      background-color: goldenrod;
+    }
+  </style>
+</head>
+
+<body>
+
+  <br><br><br>
+
+  <!-- Profile Section -->
+  <section class="section">
+    <div class="profile">
+      <img src="images/usericon.png" alt="User Avatar">
+      <div class="profile-info">
+        <h2>Christian James</h2>
+        <p>Email: admin@example.com</p>
+        <p>Member since: 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Features -->
+  <section class="section">
+    <h2>Manage Your Portal</h2>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="content">
+          <h4>📋 Manage Festivals</h4>
+          <p>View, edit, or add new festival events to keep the site fresh and exciting.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="content">
+          <h4>🖼️ Upload Gallery</h4>
+          <p>Upload beautiful festival photos to share with the world and inspire visitors.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="content">
+          <h4>📨 View Messages</h4>
+          <p>Check inquiries, feedback, and messages submitted by website visitors.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="content">
+          <h4>⚙️ Update Profile</h4>
+          <p>Update your personal information, change your password, or change your avatar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="index.html" class="see-more-btn">Go Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer or closing -->
+  <section class="section" style="text-align: center; margin-top: 60px;">
+    <p style="color: #888;">&copy; 2025 A Year of Fiestas. All Rights Reserved.</p>
+  </section>
+
+  <!-- Logout Script -->
+  <script>
+    function logout() {
+      if (confirm("Are you sure you want to log out?")) {
+        document.cookie = "loggedInUser=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+
+</body>
+</html>

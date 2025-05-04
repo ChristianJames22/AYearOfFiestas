@@ -3,26 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kadayawan Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Kadayawan Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Kadayawan Hero Title -->
   <div class="container">
     <h1>Kadayawan Festival</h1>
-    <h2>Davao City – 3rd Week of August</h2>
-    <img src="images/kadayawan.jpg" alt="Kadayawan Festival Image" />
+    <h2>Davao City – Every August</h2>
+
+    <div class="hero-image">
+      <img src="images/kadayawan1.jpg" alt="Kadayawan Parade">
+    </div>
 
     <p>
-      The Kadayawan Festival is a week-long celebration in Davao City held every August to express gratitude for the year’s blessings, including a bountiful harvest, peace, and the richness of indigenous culture.
-    </p>
-
-    <p>
-      It showcases the diversity and culture of Davao's 11 recognized tribes through parades, tribal dances, floral floats, and street parties. The word “Kadayawan” comes from the Mandaya word “madayaw,” meaning good or valuable.
-    </p>
-
-    <p>
-      It is one of Mindanao’s grandest and most colorful festivals, attracting both local and international tourists for its vibrancy and cultural pride.
+      The <strong>Kadayawan Festival</strong> is Davao City's grandest celebration, a thanksgiving for nature's bounty, cultural wealth, and peaceful living. The festival highlights the vibrant traditions of Davao’s indigenous groups and showcases colorful parades, dances, and rituals.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌾 Harvest Thanksgiving</h4>
+          <p>Kadayawan is rooted in the indigenous practice of thanking the gods for a bountiful harvest and blessings received.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎉 Indak-Indak sa Kadalanan</h4>
+          <p>A street dancing competition where different tribes and groups show off elaborate performances and colorful costumes.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏆 Floral Float Parade</h4>
+          <p>Stunning floats decorated with fresh flowers, fruits, and vegetables parade the streets, celebrating Davao’s abundance.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Tribal Showcases</h4>
+          <p>The 11 indigenous tribes of Davao present traditional rituals, dances, and crafts in cultural exhibitions and showcases.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Musical Festivities</h4>
+          <p>Music events feature indigenous instruments and contemporary performances, blending old and new sounds beautifully.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Cultural Diversity</h4>
+          <p>Kadayawan is a symbol of unity and respect among Davao’s various communities, reflecting multicultural harmony.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Kadayawan -->
+  <div class="container">
+    <h2>Highlights of Kadayawan</h2>
+    <p>
+      Major events include the Pamulak sa Kadayawan (Floral Float Parade), Indak-Indak sa Kadalanan (Street Dancing), Dula Kadayawan (tribal games), and the Hiyas sa Kadayawan (beauty and culture pageant).
+    </p>
+
+    <div class="gallery">
+      <img src="images/kadayawan2.jpg" alt="Indak-Indak Parade" />
+      <img src="images/kadayawan3.jpg" alt="Floral Parade" />
+      <img src="images/kadayawan4.jpg" alt="Tribal Shows" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Origins of Kadayawan</h2>
+        <p>Kadayawan comes from the Mandaya word "madayaw," meaning good or valuable. It began as a celebration by indigenous people for successful harvests.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/originskadayawan.jpg" alt="Origins of Kadayawan">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Tribal Unity</h2>
+        <p>The Kadayawan Festival unites Davao’s Lumad and Moro groups to share their culture, music, dances, and traditional lifestyles with the city and visitors.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/tribalunity.jpg" alt="Tribal Unity">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Celebrations</h2>
+        <p>While staying true to tradition, Kadayawan now includes concerts, food festivals, and modern exhibitions that show Davao’s growing cosmopolitan identity.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernkadayawan.jpg" alt="Modern Celebrations">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Kadayawan -->
+  <section class="section">
+    <h2>Experience Kadayawan in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/FskMsplv6AQ?si=F0P9OJRkA1ZcWwuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

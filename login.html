@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<br>
-<br>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -10,15 +8,14 @@
 </head>
 <body class="login-page">
 
-
-  <div class="login-card ">
+  <div class="login-card">
     <div class="login-image">
       <img src="images/bggg.jpg" alt="Login Visual" />
     </div>
     <div class="login-form">
       <h2>Welcome Back</h2>
       <p>Please log in to continue</p>
-      <form>
+      <form id="loginForm">
         <div class="input-group">
           <label for="email">Email</label>
           <input type="email" id="email" placeholder="Enter your email" required />
@@ -27,15 +24,64 @@
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="Enter your password" required />
         </div>
-        <button type="submit" onclick="window.location.href='index.html'">Log In</button>
+        <button type="submit">Log In</button>
       </form>
     </div>
   </div>
 
+  <script>
+    // Function to set cookie
+    function setCookie(name, value, days) {
+      const d = new Date();
+      d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+      const expires = "expires=" + d.toUTCString();
+      document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    // Function to get cookie
+    function getCookie(name) {
+      const cname = name + "=";
+      const decodedCookie = decodeURIComponent(document.cookie);
+      const ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(cname) == 0) {
+          return c.substring(cname.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Function to check if already logged in
+    function checkLogin() {
+      const user = getCookie("loggedInUser");
+      if (user !== "") {
+        window.location.href = "index.html"; // ✅ redirect if already logged in
+      }
+    }
+
+    // Run check when page loads
+    window.onload = checkLogin;
+
+    // Handle form submit
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // stop form from submitting normally
+
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // ✅ Dummy login validation (hardcoded for now)
+      if (email === "admin@gmail.com" && password === "123456") {
+        setCookie("loggedInUser", email, 7); // save login for 7 days
+        window.location.href = "index.html"; // redirect to home
+      } else {
+        alert("Invalid email or password. Please try again.");
+      }
+    });
+  </script>
+
 </body>
 </html>
-<br>
-<br>
-<br>
-<br>
-<br>

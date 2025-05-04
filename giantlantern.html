@@ -3,26 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Giant Lantern Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Giant Lantern Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+       .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+
+    
+  </style>
 </head>
+
 <body>
+
+  <!-- Giant Lantern Festival Hero Title -->
   <div class="container">
     <h1>Giant Lantern Festival</h1>
     <h2>San Fernando, Pampanga – December</h2>
-    <img src="images/giantlantern.jpg" alt="Giant Lantern Festival Image" />
+
+    <div class="hero-image">
+      <img src="images/giantlantern1.jpg" alt="Giant Lantern Festival">
+    </div>
 
     <p>
-      The Giant Lantern Festival, held in San Fernando, Pampanga, is a dazzling spectacle of lights and craftsmanship celebrated every December. The city has earned the title “Christmas Capital of the Philippines” because of this grand event.
-    </p>
-
-    <p>
-      Barangays compete to build the biggest and most elaborate lanterns, which can reach up to 20 feet in diameter. These lanterns are lit using complex rotor systems that create kaleidoscopic effects and synchronized light shows.
-    </p>
-
-    <p>
-      The festival is a source of pride for Kapampangans and a symbol of Filipino creativity and joy during the Christmas season.
+      The <strong>Giant Lantern Festival</strong> in San Fernando, Pampanga, is a mesmerizing display of giant, colorful lanterns ("parols") that light up the Christmas spirit.  
+      Known as the "Christmas Capital of the Philippines," San Fernando showcases creativity, craftsmanship, and community pride every December.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎆 Giant Parols</h4>
+          <p>Massive lanterns up to 20 feet in diameter, adorned with intricate lights and colorful designs, compete for top honors.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>💡 Light Shows</h4>
+          <p>Lanterns are synchronized with music, producing breathtaking light shows that captivate thousands of spectators.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏛️ Craftsmanship</h4>
+          <p>Local artisans dedicate months to meticulously design and build these mechanical, illuminated masterpieces.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎄 Christmas Tradition</h4>
+          <p>The festival symbolizes the Filipino Christmas spirit: joy, unity, creativity, and devotion to family and faith.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Global Attraction</h4>
+          <p>The Giant Lantern Festival draws tourists and media attention worldwide, promoting Pampanga's unique culture.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>👨‍👩‍👧‍👦 Community Spirit</h4>
+          <p>Barangays (villages) compete in friendly rivalry, fostering unity, teamwork, and local pride.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Giant Lantern Festival -->
+  <div class="container">
+    <h2>Highlights of the Festival</h2>
+    <p>
+      The main events include the grand lantern competition, parol exhibitions, musical performances, Christmas markets, and nightly lantern light shows that awe visitors and locals alike.
+    </p>
+
+    <div class="gallery">
+      <img src="images/giantlantern2.jpg" alt="Lantern Parade" />
+      <img src="images/giantlantern3.jpg" alt="Dancing Lights" />
+      <img src="images/giantlantern4.jpg" alt="Crowd Watching Festival" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of Giant Lantern Festival</h2>
+        <p>The festival started from simple "parol" traditions during Misas de Gallo (dawn masses) and evolved into a grand event showcasing engineering, artistry, and Christmas spirit.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historygiantlantern.jpg" alt="History of Giant Lanterns">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Art and Technology</h2>
+        <p>Today's lanterns use complex rotors, LED technology, and thousands of lights, creating animated scenes choreographed with music and stunning precision.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/arttechnology.jpg" alt="Art and Technology">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Festival</h2>
+        <p>The Giant Lantern Festival has become a key symbol of Filipino Christmas culture and a proud tradition that showcases the endless creativity of Pampanga’s artisans.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernlantern.jpg" alt="Modern Giant Lantern Festival">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Giant Lantern Festival -->
+  <section class="section">
+    <h2>Experience the Giant Lantern Festival in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1oOPjileY6s?si=OWBGUGV3b_5vX5tn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

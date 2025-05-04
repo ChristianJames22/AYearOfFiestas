@@ -7,6 +7,15 @@
   <title>A Year of Fiestas</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    /* Quick simple styles for avatar dropdown */
+    #userDropdown a:hover {
+      background-color: #f1f1f1;
+    }
+    #userDropdown {
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,14 +29,16 @@
         </a>
       </div>
       <button class="hamburger" onclick="toggleMobileNav()">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="#home" id="homeLink" onclick="loadPage('home'); return false;">Home</a>
         <a href="#about" id="aboutLink" onclick="loadPage('about'); return false;">About</a>
         <a href="#contact" id="contactLink" onclick="loadPage('contact'); return false;">Contact</a>
+
         <div class="dropdown" id="festivalDropdown">
           <button class="dropbtn" id="festivalsBtn" onclick="toggleDropdown()">Festivals ▾</button>
           <div class="dropdown-content" id="festivalLinks">
-            <a href="#festivals" onclick="loadPage('festivals'); return false;">All Festivals</a>
+            <a href="#festivals" onclick="loadPage('festivals'); return false;" style="color: #ffe600; font-size: larger; font-weight: bolder;">All Festivals</a>
             <strong>January</strong>
             <a href="#sinulog" onclick="loadPage('sinulog'); return false;">Sinulog Festival</a>
             <a href="#atiatihan" onclick="loadPage('atiatihan'); return false;">Ati-Atihan Festival</a>
@@ -36,7 +47,6 @@
 
             <strong>February</strong>
             <a href="#panagbenga" onclick="loadPage('panagbenga'); return false;">Panagbenga Festival</a>
-            <a href="#hotair" onclick="loadPage('hotair'); return false;">Hot Air Balloon</a>
 
             <strong>March</strong>
             <a href="#kaamulan" onclick="loadPage('kaamulan'); return false;">Kaamulan Festival</a>
@@ -47,10 +57,8 @@
 
             <strong>May</strong>
             <a href="#pahiyas" onclick="loadPage('pahiyas'); return false;">Pahiyas Festival</a>
-            <a href="#obando" onclick="loadPage('obando'); return false;">Obando Rites</a>
 
             <strong>June</strong>
-            <a href="#lechon" onclick="loadPage('lechon'); return false;">Parada ng Lechon</a>
             <a href="#pintados" onclick="loadPage('pintados'); return false;">Pintados</a>
 
             <strong>August</strong>
@@ -66,9 +74,20 @@
           </div>
         </div>
 
-        <a href="login.html" class="login-icon">
-          <i class="fa fa-user"></i> Login
-        </a>
+        <!-- 👤 Login / Avatar -->
+        <div id="userMenuContainer">
+          <a href="login.html" class="login-icon" id="loginButton">
+            <i class="fa fa-user"></i> Login
+          </a>
+
+          <div id="userAvatar" style="display: none; position: relative;">
+            <img src="images/usericon.png" alt="User Avatar" style="width: 40px; height: 40px; border-radius: 50%; cursor: pointer;">
+            <div id="userDropdown" style="display: none; position: absolute; right: 0; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border-radius: 6px; overflow: hidden; margin-top: 10px; z-index: 1000;">
+              <a href="dashboard.html" style="display: block; padding: 10px 20px; text-decoration: none; color: black;">Dashboard</a>
+              <a href="#" onclick="logout()" style="display: block; padding: 10px 20px; text-decoration: none; color: black;">Logout</a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -102,6 +121,7 @@
 
     <!-- Scripts -->
     <script>
+      // Page Loading and Highlighting Logic
       function loadPage(page, addToHistory = true) {
         fetch(page + '.html')
           .then(res => res.text())
@@ -166,20 +186,62 @@
         }
       }
 
-      // ✅ Bring Back HIDE/SHOW Navbar on Scroll
+      // Hide/Show Navbar on Scroll
       let lastScrollTop = 0;
       const navbar = document.querySelector('.navbar');
 
       window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-          navbar.style.transform = 'translateY(-100%)';
-        } else {
-          navbar.style.transform = 'translateY(0)';
-        }
-
+        navbar.style.transform = (scrollTop > lastScrollTop) ? 'translateY(-100%)' : 'translateY(0)';
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+
+      // Session and Avatar Login Management
+      function setCookie(name, value, days) {
+        const d = new Date();
+        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+      }
+
+      function getCookie(name) {
+        const cname = name + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const ca = decodedCookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+          let c = ca[i].trim();
+          if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+        }
+        return "";
+      }
+
+      function deleteCookie(name) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      }
+
+      function checkLoginStatus() {
+        const user = getCookie("loggedInUser");
+        document.getElementById("loginButton").style.display = (user !== "") ? "none" : "block";
+        document.getElementById("userAvatar").style.display = (user !== "") ? "block" : "none";
+      }
+
+      function logout() {
+        if (confirm("Are you sure you want to log out?")) {
+          deleteCookie("loggedInUser");
+          checkLoginStatus();
+          window.location.href = "index.html";
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const avatar = document.querySelector("#userAvatar img");
+        const dropdown = document.getElementById("userDropdown");
+
+        if (avatar) {
+          avatar.addEventListener("click", function () {
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+          });
+        }
+        checkLoginStatus();
       });
     </script>
   </div>

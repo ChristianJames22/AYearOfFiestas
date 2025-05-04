@@ -3,26 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Panagbenga Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Panagbenga Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    
+    }
+
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Panagbenga Hero Title -->
   <div class="container">
     <h1>Panagbenga Festival</h1>
-    <h2>Baguio City – February</h2>
-    <img src="images/panagbenga.jpg" alt="Panagbenga Festival Image" />
+    <h2>Baguio City – February to March</h2>
+
+  <div class="hero-image">
+      <img src="images/panagbenga1.jpg" alt="Panagbenga Parade">
+    </div>
 
     <p>
-      Panagbenga, which means "season of blooming," is an annual flower festival celebrated in Baguio City throughout the month of February. It honors the city's floral heritage and the resilience of its people after the 1990 Luzon earthquake.
-    </p>
-
-    <p>
-      The celebration is known for its stunning grand float parade filled with fresh flowers, colorful street dancing inspired by the region's indigenous culture, and a month-long exhibition of local creativity and talent.
-    </p>
-
-    <p>
-      Panagbenga Festival has become one of the most anticipated tourist events in the Philippines, offering a cool-weathered, flower-filled escape to the summer capital.
+      The <strong>Panagbenga Festival</strong>, meaning "Season of Blooming," is Baguio City's grand flower festival, celebrating the region’s floral abundance and cultural heritage with floats, street dancing, and community activities throughout February.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌸 Floral Parade</h4>
+          <p>Giant floats adorned with fresh flowers parade down Session Road, showcasing Baguio’s blooming beauty.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>💃 Street Dancing</h4>
+          <p>Performers dressed in colorful floral-themed costumes dance gracefully through the streets to upbeat music.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏵️ Community Spirit</h4>
+          <p>Locals actively participate in parades, exhibitions, markets, and sports events promoting unity and tourism.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌿 Eco-Cultural Theme</h4>
+          <p>Panagbenga also highlights environmental preservation, indigenous culture, and Baguio’s love for nature.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Musical Events</h4>
+          <p>Concerts, band exhibitions, and street performances add rhythm to the festive atmosphere all month long.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏔️ Baguio's Pride</h4>
+          <p>Panagbenga strengthens Baguio’s identity as the Summer Capital of the Philippines through festive celebrations.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Panagbenga -->
+  <div class="container">
+    <h2>Highlights of Panagbenga</h2>
+    <p>
+      The Grand Street Parade, Grand Float Parade, and Session Road in Bloom are the major highlights. These colorful events fill the city with joy, flowers, and excitement, attracting thousands of local and international visitors.
+    </p>
+
+    <div class="gallery">
+      <img src="images/panagbenga2.jpg" alt="Flower Parade" />
+      <img src="images/panagbenga3.jpg" alt="Street Dancing" />
+      <img src="images/panagbenga4.jpg" alt="Floral Floats" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of Panagbenga</h2>
+        <p>The Panagbenga Festival started in 1995 to uplift Baguio's spirits after the 1990 earthquake, and to promote tourism and cultural pride through flowers and festivities.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historypanagbenga.jpg" alt="History of Panagbenga">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Session Road in Bloom</h2>
+        <p>During Panagbenga, Baguio’s main commercial hub transforms into a pedestrian paradise filled with flower stalls, local crafts, food booths, and entertainment.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/sessionroadbloom.jpg" alt="Session Road in Bloom">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Eco-Awareness</h2>
+        <p>Panagbenga integrates environmental awareness, encouraging the conservation of nature, cleanliness, and respect for Baguio’s fragile ecosystem.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/ecoawareness.jpg" alt="Eco-Awareness in Panagbenga">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Panagbenga -->
+  <section class="section">
+    <h2>Experience Panagbenga in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cti78J-jbUE?si=ZOOaVForZ-GhtNub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

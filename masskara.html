@@ -3,26 +3,311 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MassKara Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>MassKara Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- MassKara Hero Title -->
   <div class="container">
     <h1>MassKara Festival</h1>
     <h2>Bacolod City – October</h2>
-    <img src="images/masskara.jpg" alt="MassKara Festival Image" />
+
+    <div class="hero-image">
+      <img src="images/masskara1.jpg" alt="MassKara Festival Parade">
+    </div>
 
     <p>
-      The MassKara Festival is held every October in Bacolod City, known as the "City of Smiles." The word “MassKara” is a combination of “mass” (crowd) and “kara” (face), and the festival was born during a time of crisis to uplift the spirits of the people.
-    </p>
-
-    <p>
-      The event is famous for its vibrant street dancing where participants wear smiling, colorful masks, elaborate costumes, and perform synchronized dances to upbeat music.
-    </p>
-
-    <p>
-      It’s a joyful celebration that showcases the Bacolodnons’ resilience, optimism, and creativity, and has become one of the most iconic and anticipated festivals in the country.
+      The <strong>MassKara Festival</strong> is a vibrant celebration held every October in Bacolod City, known as the “City of Smiles.”  
+      It is famous for its colorful masks, upbeat street dancing, and joyous spirit — symbolizing the resilience and optimism of the Bacolodnons.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Colorful Masks</h4>
+          <p>Participants wear bright, smiling masks adorned with feathers, beads, and sequins, representing hope and positivity.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>💃 Energetic Street Dancing</h4>
+          <p>Dance contingents groove to lively music along Bacolod’s main streets in choreographed, high-energy performances.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎉 Festival of Smiles</h4>
+          <p>MassKara is a celebration of resilience, born during a time of economic crisis, showing the enduring Filipino spirit of joy.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🚚 Grand Parade</h4>
+          <p>Massive floats, colorful costumes, and dynamic street dancers flood the city's streets in a breathtaking parade of happiness.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Concerts and Street Parties</h4>
+          <p>Live bands, food fairs, and parties keep Bacolod City alive with energy throughout the festival week.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 International Visitors</h4>
+          <p>MassKara Festival draws tourists from all over the world, experiencing Bacolod's famous hospitality and festive atmosphere.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of MassKara -->
+  <div class="container">
+    <h2>Highlights of MassKara Festival</h2>
+    <p>
+      The main highlights are the Street Dancing Competition, the Electric MassKara (a night parade of illuminated floats and dancers), beauty pageants, concerts, food fairs, and colorful mask contests.
+    </p>
+
+    <div class="gallery">
+      <img src="images/masskara2.jpg" alt="MassKara Dance Parade" />
+      <img src="images/masskara3.jpg" alt="Electric MassKara" />
+      <img src="images/masskara4.jpg" alt="Smiling Dancers" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of MassKara</h2>
+        <p>MassKara started in 1980 during a time of crisis in Bacolod. The festival was conceived as a way to uplift spirits by celebrating life through smiles and festivities.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historymasskara.jpg" alt="History of MassKara">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Symbolism of Masks</h2>
+        <p>The colorful smiling masks represent the resilience and positive outlook of Bacolodnons, even during hardships and struggles.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/masssymbol.jpg" alt="Symbolism of MassKara Masks">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>MassKara Today</h2>
+        <p>Today, MassKara is one of the most awaited festivals in the Philippines, promoting Bacolod as a top tourist destination and the ultimate city of smiles.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernmasskara.jpg" alt="Modern MassKara Festival">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch MassKara -->
+  <section class="section">
+    <h2>Experience MassKara Festival in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5crwHZX4KcI?si=TjfSZRVMSFlIaPwM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

@@ -3,18 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaamulan Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Kaamulan Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Kaamulan Hero Title -->
   <div class="container">
     <h1>Kaamulan Festival</h1>
     <h2>Malaybalay City, Bukidnon – March</h2>
-    <img src="images/kaamulan.jpg" alt="Kaamulan Festival Image" />
+
+    <div class="hero-image">
+      <img src="images/kaamulan1.jpg" alt="Kaamulan Parade">
+    </div>
 
     <p>
-      The Kaamulan Festival is an ethnic-cultural celebration held in Malaybalay City, Bukidnon. It honors the customs and traditions of the seven indigenous tribes of Bukidnon: Bukidnon, Higaonon, Talaandig, Manobo, Matigsalug, Tigwahanon, and Umayamnon.
+      The <strong>Kaamulan Festival</strong> is Bukidnon’s grand ethnic-cultural festival, gathering the province’s seven indigenous groups for a colorful celebration of culture, traditions, unity, and peace.
+    </p>
+  </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌿 Indigenous Unity</h4>
+          <p>Kaamulan gathers Bukidnon’s seven tribes—Manobo, Higaonon, Bukidnon, Talaandig, Umayamnon, Matigsalug, and Tigwahanon—into one cultural celebration.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🛖 Rituals and Traditions</h4>
+          <p>Authentic tribal rituals, wedding ceremonies, and traditional dances are performed during the festival.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Tribal Music</h4>
+          <p>Tribal music played with indigenous instruments fills the streets during street dancing and ritual competitions.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Cultural Showcases</h4>
+          <p>Contests, exhibitions, and performances showcase traditional costumes, crafts, and the diverse heritage of Bukidnon’s tribes.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Heritage Preservation</h4>
+          <p>Kaamulan helps preserve indigenous traditions for future generations while promoting respect for cultural diversity.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏕️ Nature and Culture</h4>
+          <p>The festival is a grand tribute to Bukidnon’s cultural and natural richness, taking place amid its lush landscapes.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Kaamulan -->
+  <div class="container">
+    <h2>Highlights of Kaamulan</h2>
+    <p>
+      Major activities include street dancing, float parades, tribal sports competitions, ritual performances, the Kaamulan Horse Show, and the Ethnic Music and Dance Competition.
     </p>
 
-    <p>
-      “Kaamulan” means “to gather,” and the event is truly a gathering of the tribes to celebrate important occasions such as harvests, weddings, peace pacts, and the
+    <div class="gallery">
+      <img src="images/kaamulan2.jpg" alt="Tribal Dance Parade" />
+      <img src="images/kaamulan3.jpg" alt="Float Parade" />
+      <img src="images/kaamulan4.jpg" alt="Traditional Dances" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Origins of Kaamulan</h2>
+        <p>Kaamulan comes from the Binukid word "amul," meaning “to gather.” It started as a simple tribal gathering in 1977 and grew into a grand ethnic festival recognized nationwide.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historykaamulan.jpg" alt="Origins of Kaamulan">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Living Traditions</h2>
+        <p>The festival is a living showcase of Bukidnon’s tribal traditions, featuring real tribal weddings, rituals of thanksgiving, and the symbolic acceptance of peace pacts.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/traditionskaamulan.jpg" alt="Living Traditions">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Celebrating Diversity</h2>
+        <p>Kaamulan celebrates diversity, unity, and the spirit of coexistence among Bukidnon’s indigenous communities and migrant settlers alike.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/celebratingdiversitykaamulan.jpg" alt="Celebrating Diversity">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Kaamulan -->
+  <section class="section">
+    <h2>Experience Kaamulan in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/WF46fQqYEsI?si=sLQqvBrciZSUS3dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
+</body>
+</html>

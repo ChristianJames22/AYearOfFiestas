@@ -3,26 +3,338 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ati-Atihan Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Ati-Atihan Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- Ati-Atihan Hero Title -->
   <div class="container">
     <h1>Ati-Atihan Festival</h1>
     <h2>Kalibo, Aklan – 3rd Sunday of January</h2>
-    <img src="images/atiatihan.jpg" alt="Ati-Atihan Festival Image" />
+
+    <div class="gallery">
+      <img src="images/atiatihan1.jpg" alt="Ati-Atihan Parade">
+    </div>
 
     <p>
-      The Ati-Atihan Festival is one of the oldest and most vibrant festivals in the Philippines. Held annually in Kalibo, Aklan, this celebration honors the Santo Niño (Holy Child Jesus) and features tribal dance, music, and colorful indigenous costumes.
-    </p>
-
-    <p>
-      Revelers paint their faces with black soot and wear traditional Visayan attire while dancing to rhythmic drumbeats through the streets — a tribute to the Ati people, the indigenous group believed to be the first settlers of the region.
-    </p>
-
-    <p>
-      More than just a religious celebration, Ati-Atihan has become a cultural icon of Filipino festivity, showcasing unity, faith, and joy among its people.
+      The <strong>Ati-Atihan Festival</strong> is known as the "Mother of All Philippine Festivals," celebrated in Kalibo, Aklan. It honors the Santo Niño and reflects the fusion of indigenous traditions and Spanish Christianity, famous for its lively street dancing and tribal costumes.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>📜 Tribal Origins</h4>
+          <p>The festival originated from a peaceful pact between the native Aetas (Ati) and Malay settlers in Panay Island centuries ago.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎉 Paint and Dance</h4>
+          <p>Participants paint their faces with soot, wear tribal costumes, and dance to the beat of drums through the streets of Kalibo.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>⛪ Devotion to Santo Niño</h4>
+          <p>Religious processions and masses are central, blending faith and culture as locals celebrate the Santo Niño’s blessings.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Vibrant Costumes</h4>
+          <p>Colorful tribal attire, elaborate headdresses, and body paints make Ati-Atihan one of the most visually stunning festivals in the country.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Rhythmic Drumbeats</h4>
+          <p>The heartbeat of Ati-Atihan is the relentless beat of native drums energizing the dancers and audience alike.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌎 A Global Icon</h4>
+          <p>Ati-Atihan’s unique style inspired other major Philippine festivals and draws visitors from around the world.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Ati-Atihan -->
+  <div class="container">
+    <h2>Highlights of Ati-Atihan</h2>
+    <p>
+      Ati-Atihan is a week-long celebration filled with religious activities, tribal dances, costume parades, music, and street parties. The "sadsad" — a non-stop street dancing tradition — is a vibrant display of communal joy and faith.
+    </p>
+
+    <div class="gallery">
+      <img src="images/atiatihan2.jpg" alt="Sadsad Street Dance" />
+      <img src="images/atiatihan3.jpg" alt="Tribal Parade" />
+      <img src="images/atiatihan4.jpg" alt="Grand Celebration" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of Ati-Atihan</h2>
+        <p>Ati-Atihan traces its roots to the arrival of Malay settlers who were welcomed by the Ati natives. It later evolved into a celebration honoring the Santo Niño with indigenous practices and Catholic rituals combined.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/atiatian_history.png" alt="History of Ati-Atihan">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Tribal Paint and Tradition</h2>
+        <p>Participants paint their faces black and wear indigenous costumes to symbolize the Ati people and pay homage to cultural heritage.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/tribalpaint.jpg" alt="Tribal Paint Tradition">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Religious Devotion</h2>
+        <p>While the festival is known for its festivities, religious devotion remains at its core, with masses, processions, and celebrations dedicated to the Santo Niño.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/devotion.jpg" alt="Religious Devotion">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Colorful Celebrations</h2>
+        <p>Ati-Atihan's vibrant colors, rhythmic drumbeats, and lively dances showcase the joyous spirit and resilience of Filipino culture.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/colors.jpg" alt="Colorful Celebration">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Unity and Hospitality</h2>
+        <p>The festival is a symbol of Filipino hospitality and unity, welcoming all visitors to dance, sing, and celebrate together as one family.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/unity.jpg" alt="Unity and Hospitality">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Influence</h2>
+        <p>Ati-Atihan has greatly influenced other famous festivals like Sinulog and Dinagyang, spreading its cultural legacy across the Philippines and beyond.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/influence.jpg" alt="Modern Influence">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Ati-Atihan -->
+  <section class="section">
+    <h2>Experience Ati-Atihan in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/K7iizk0ezRw?si=K_VvDdcSI29FFhZh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

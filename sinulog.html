@@ -3,26 +3,386 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sinulog Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Sinulog Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Sinulog Hero Title -->
   <div class="container">
     <h1>Sinulog Festival</h1>
     <h2>Cebu City – 3rd Sunday of January</h2>
-    <img src="images/sinulogg.jpg" alt="Sinulog Festival Image" />
+
+    <div class="hero-image">
+      <img src="images/sinulogg.jpg" alt="Sinulog Parade">
+    </div>
 
     <p>
-      The Sinulog Festival is one of the grandest and most colorful festivals in the Philippines, held every January in Cebu City in honor of the Santo Niño (Child Jesus).
-    </p>
-
-    <p>
-      Participants clad in vibrant costumes dance to the rhythm of drums, trumpets, and native gongs in a lively procession that mimics the traditional Sinulog dance — two steps forward, one step back — symbolizing the Filipinos’ journey of faith.
-    </p>
-
-    <p>
-      A mix of religious devotion and cultural celebration, the Sinulog Festival draws millions of visitors every year, transforming the streets of Cebu into a dazzling display of unity, tradition, and joy.
+      The <strong>Sinulog Festival</strong> is a grand showcase of Filipino devotion, history, and vibrant culture. 
+      Held annually in Cebu City, this event commemorates the Filipino people's acceptance of Christianity, symbolized by the Santo Niño (Child Jesus) brought by Spanish explorers in 1521.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <!-- Festival Overview Cards INSIDE SECTION -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+  
+      <!-- First Row -->
+      <div class="feature-card">
+        <div class="content">
+          <h4>📜 Historical Roots</h4>
+          <p>The Sinulog dance steps represent the ancient movement of water — and the transition from animism to Christianity in the Philippines.</p>
+        </div>
+      </div>
+  
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎉 Street Dance Ritual</h4>
+          <p>Participants in vivid costumes dance rhythmically to drumbeats during grand processions across Cebu's streets.</p>
+        </div>
+      </div>
+  
+      <div class="feature-card">
+        <div class="content">
+          <h4>⛪ Religious Celebration</h4>
+          <p>At the heart of Sinulog lies the religious aspect — devotees join solemn processions, honoring the miraculous Santo Niño.</p>
+        </div>
+      </div>
+  
+      <!-- Second Row -->
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Colorful Costumes</h4>
+          <p>Dazzling and intricate costumes highlight Cebuano creativity and the festival’s lively spirit.</p>
+        </div>
+      </div>
+  
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Drumbeat Symphony</h4>
+          <p>The beating of drums echoes through the city, energizing dancers and spectators alike.</p>
+        </div>
+      </div>
+  
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌎 Global Fame</h4>
+          <p>Drawing millions of visitors each year, Sinulog highlights the Philippines' rich cultural identity to the world.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- Sinulog Highlights -->
+  <div class="container">
+    <h2>Highlights of Sinulog</h2>
+    <p>
+      The festival starts with novena masses at the Basilica Minore del Santo Niño, followed by a grand fluvial parade, a solemn foot procession, and a majestic grand parade featuring float competitions, group dances, and vibrant street parties lasting until dawn.
+    </p>
+
+    <div class="gallery">
+      <img src="images/maskara.jpg" alt="Street Dance Parade" />
+      <img src="images/Kadayawan.jpg" alt="Dance Ritual" />
+      <img src="images/sinulogg.jpg" alt="Grand Parade" />
+    </div>
+  </div>
+
+  <!-- 9 Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Beginnings of Sinulog</h2>
+        <p>The Sinulog Festival began in 1521 when Ferdinand Magellan introduced Christianity to Cebu. Rajah Humabon, Queen Juana, and their subjects were baptized, and the Santo Niño was gifted to Queen Juana.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/beginnings.jpg" alt="Beginnings of Sinulog">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Ancient Ritual Dance</h2>
+        <p>Before Spanish arrival, Cebuanos performed ritual dances to their deities symbolizing water currents. After conversion, they adapted the dance for the Santo Niño.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/ritualdance.jpg" alt="Ancient Ritual Dance">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Religious Significance</h2>
+        <p>The Santo Niño symbolizes hope, faith, and miracles. Thousands gather for novena masses and processions to honor the Child Jesus each January.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/religioussignificance.jpg" alt="Religious Significance">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Cultural Evolution</h2>
+        <p>Sinulog has grown from local devotion into a globally recognized event, blending Spanish, indigenous, and Filipino cultural expressions in music, dance, and art.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/culturalevolution.jpg" alt="Cultural Evolution">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Major Events</h2>
+        <p>The Grand Parade, fluvial processions, street dances, and religious masses fill Cebu City with color, devotion, and excitement every Sinulog Festival.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/majorevents.jpg" alt="Major Events">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Symbolism and Meaning</h2>
+        <p>Two steps forward, one step back: the dance represents life's challenges and triumphs, with faith as the guiding force amid struggles and blessings.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/symbolism.jpg" alt="Symbolism and Meaning">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Personal Devotions and Stories</h2>
+        <p>Miracle stories and answered prayers connect many devotees personally to the Santo Niño, giving deeper meaning to their participation in the festival.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/devotionstories.jpg" alt="Personal Devotions">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Challenges</h2>
+        <p>Balancing tourism, commercialization, and religious respect is a modern challenge. Community leaders strive to protect Sinulog's authentic spirit.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernchallenges.jpg" alt="Modern Challenges">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Conclusion: The Heart of Sinulog</h2>
+        <p>Sinulog remains a proud declaration of Filipino faith, culture, and unity. It stands strong as a vibrant tribute to the Santo Niño across centuries.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/conclusion.jpg" alt="Heart of Sinulog">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Sinulog -->
+  <section class="section">
+    <h2>Experience Sinulog in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NYkjhH4-xdE?si=e_1OJefwGMuTlb5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

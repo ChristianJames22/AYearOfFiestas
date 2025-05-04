@@ -3,26 +3,310 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Black Nazarene Procession</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Black Nazarene Procession - A Year of Faith</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+  <!-- Black Nazarene Hero Title -->
   <div class="container">
     <h1>Black Nazarene Procession</h1>
     <h2>Quiapo, Manila – January 9</h2>
-    <img src="images/blacknazarene.jpg" alt="Black Nazarene Procession" />
+
+    <div class="hero-image">
+      <img src="images/blacknazarene.jpg" alt="Black Nazarene Procession">
+    </div>
 
     <p>
-      The Feast of the Black Nazarene is one of the most solemn and widely attended religious events in the Philippines, held annually on January 9 in Quiapo, Manila.
-    </p>
-
-    <p>
-      Devotees clad in maroon shirts walk barefoot as a sign of humility and penitence, joining a massive procession called the "Traslación" that transports the life-size image of the Black Nazarene through the streets of Manila.
-    </p>
-
-    <p>
-      This event draws millions of participants and is known for its deep expression of Filipino faith, sacrifice, and fervent devotion to Jesus Christ.
+      The <strong>Feast of the Black Nazarene</strong> is one of the most iconic and revered religious events in the Philippines, gathering millions of barefoot devotees who brave the procession called "Traslación" every January 9 in Quiapo, Manila.
     </p>
   </div>
+
+  <!-- Festival Overview Cards -->
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Procession Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>✝️ Deep Faith</h4>
+          <p>Millions join the Traslación to express unwavering devotion to the Black Nazarene, seeking miracles and blessings through sacrifice.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>👣 Barefoot Pilgrimage</h4>
+          <p>Devotees walk barefoot through the hot streets of Manila as a sign of humility and penance, reenacting Christ's suffering.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🛐 Miraculous Image</h4>
+          <p>The life-sized statue of the Black Nazarene, said to be miraculous, is carried on a gilded carriage surrounded by a sea of devotees.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>📜 Historic Origins</h4>
+          <p>The Black Nazarene image was brought to the Philippines from Mexico in the early 1600s, surviving fires and earthquakes.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎶 Hymns and Prayers</h4>
+          <p>Throughout the procession, the air is filled with chants of "Viva Señor Nazareno!" along with mass prayers and hymns.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Global Recognition</h4>
+          <p>The Feast of the Black Nazarene is considered one of the largest religious events in the world by sheer number of participants.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlights of Black Nazarene -->
+  <div class="container">
+    <h2>Highlights of the Feast</h2>
+    <p>
+      The procession spans over 20 hours and covers kilometers of Manila’s streets. Devotees scramble to touch the ropes or the image itself, believing it will grant them healing, forgiveness, and miracles.
+    </p>
+
+    <div class="gallery">
+      <img src="images/blacknazarene2.jpg" alt="Traslacion Crowd" />
+      <img src="images/blacknazarene3.jpg" alt="Carriage Procession" />
+      <img src="images/blacknazarene4.jpg" alt="Faithful Devotees" />
+    </div>
+  </div>
+
+  <!-- Sections -->
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>History of the Black Nazarene</h2>
+        <p>The Black Nazarene statue was carved in Mexico, brought to Manila in 1606, and became a symbol of resilience and miracles after surviving multiple disasters.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historyblacknazarene.jpg" alt="History of Black Nazarene">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Traslación: The Grand Procession</h2>
+        <p>The Traslación commemorates the transfer of the Black Nazarene’s image from Intramuros to its current home at Quiapo Church. It symbolizes Christ’s journey and human suffering.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/traslacion.jpg" alt="Traslacion Procession">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Acts of Devotion</h2>
+        <p>Devotees express their faith by touching the image, wiping it with towels, or simply walking barefoot alongside it, all in hopes of spiritual renewal.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/devotionblacknazarene.jpg" alt="Acts of Devotion">
+      </div>
+    </div>
+  </section>
+
+  <!-- Watch Black Nazarene -->
+  <section class="section">
+    <h2>Experience the Traslación</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pVBeA4iXT0Q?si=Wo4D-qGptFr1LVb5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>
