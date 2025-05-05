@@ -3,26 +3,299 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sandugo Festival</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Sandugo Festival - A Year of Fiestas</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, h4 {
+      color: #FFD700;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 17px;
+      text-align: justify;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 50%;
+      background-color: #222;
+      object-fit: cover;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+
+    .feature-card {
+      background-color: #222222ad;
+      padding: 20px;
+      border-radius: 12px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s;
+      border: 1px solid #FFD700;
+    }
+
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    .content h4 {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #ddd;
+    }
+
+    .section {
+      background: #22222288;
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 1200px;
+      border: 1px solid #FFD700;
+    }
+
+    .section-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .text-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .text-content h2 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .text-content p {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .image-content {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .image-content img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #FFD700;
+      border-radius: 12px;
+      background-color: #222;
+    }
+
+    iframe {
+      border: 4px solid #FFD700;
+      border-radius: 12px;
+    }
+
+    .see-more-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .see-more-btn:hover {
+      background-color: #ffa500;
+      color: white;
+    }
+
+    .hero-image {
+  flex: 1;
+  margin-top: 30px;
+  justify-content: center;
+  margin-right: 28%;
+  flex: 0 0 180px;
+}
+  </style>
 </head>
+
 <body>
+
+
   <div class="container">
     <h1>Sandugo Festival</h1>
     <h2>Tagbilaran City, Bohol – July</h2>
-    <img src="images/sandugo.jpg" alt="Sandugo Festival Image" />
+
+    <div class="hero-image">
+      <img src="images/sandugo1.jpg" alt="Sandugo Street Dance">
+    </div>
 
     <p>
-      The Sandugo Festival commemorates the blood compact (or “sandugo”) of Datu Sikatuna and Spanish explorer Miguel López de Legazpi in 1565. This historic event is considered the first international treaty of friendship between the Filipinos and Spaniards.
-    </p>
-
-    <p>
-      Celebrated in Tagbilaran City, Bohol, the festival features a reenactment of the blood compact, street dancing, beauty pageants, trade fairs, and cultural shows that showcase Boholano artistry and heritage.
-    </p>
-
-    <p>
-      Sandugo is both a celebration of peace and unity and a remembrance of a turning point in Philippine colonial history.
+      The <strong>Sandugo Festival</strong> is a historical and cultural celebration in Tagbilaran City, Bohol, held every July.  
+      It commemorates the historic blood compact (“Sandugo”) between Datu Sikatuna and Spanish explorer Miguel López de Legazpi in 1565 — a symbol of friendship and peace.
     </p>
   </div>
+
+  
+  <section class="section">
+    <h2 style="text-align:center; font-family:'Georgia', serif; font-style:italic;">Festival Overview</h2>
+    <div class="features">
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🤝 Historic Blood Compact</h4>
+          <p>The festival commemorates the first international treaty of friendship between Filipinos and Spaniards.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>💃 Street Dancing Competitions</h4>
+          <p>Participants in colorful costumes re-enact the Sandugo and Bohol’s rich heritage through dance and music.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎉 Grand Parades</h4>
+          <p>Floats, beauty queens, dancers, and drum corps flood the streets of Tagbilaran in lively parades.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🎭 Cultural Exhibits</h4>
+          <p>Art displays, fairs, and historical exhibitions honor Boholano history, artistry, and resilience.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🏝️ Tourism Showcase</h4>
+          <p>The Sandugo Festival also promotes Bohol's scenic destinations like Panglao Island and Chocolate Hills.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="content">
+          <h4>🌍 Global Recognition</h4>
+          <p>The Sandugo Festival brings international visitors, highlighting Bohol’s hospitality and cultural pride.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <div class="container">
+    <h2>Highlights of Sandugo Festival</h2>
+    <p>
+      Key events include the re-enactment of the Blood Compact, street dancing competitions, beauty pageants, trade fairs, and nightly cultural shows that attract locals and tourists alike.
+    </p>
+
+    <div class="gallery">
+      <img src="images/sandugo2.jpg" alt="Sandugo Parade" />
+      <img src="images/sandugo3.jpg" alt="Re-enactment of Blood Compact" />
+      <img src="images/sandugo4.jpg" alt="Cultural Show">
+    </div>
+  </div>
+
+ 
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>The Blood Compact Story</h2>
+        <p>The Sandugo or blood compact sealed the historic treaty of friendship between Datu Sikatuna and Miguel López de Legazpi, a gesture of trust and alliance.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/historysandugo.jpg" alt="Blood Compact Story">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-content">
+      <div class="text-content">
+        <h2>Modern Celebrations</h2>
+        <p>Today, Sandugo Festival combines historical appreciation with vibrant street festivities, showcasing the talents and spirit of the Boholano people.</p>
+      </div>
+      <div class="image-content">
+        <img src="images/modernsandugo.jpg" alt="Modern Sandugo Festival">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <h2>Experience Sandugo Festival in Motion</h2>
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t2WSKJeNEqA" title="Sandugo Festival Highlights" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  
+  <div style="text-align: center; margin: 60px 0;">
+    <a href="festivals.html" class="see-more-btn">Explore Other Festivals</a>
+  </div>
+
 </body>
 </html>

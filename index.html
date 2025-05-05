@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <style>
-    /* Quick simple styles for avatar dropdown */
+   
     #userDropdown a:hover {
       background-color: #f1f1f1;
     }
@@ -20,7 +20,6 @@
 
 <body>
   <div id="wrapper">
-    <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
         <a href="#home" id="logoLink" onclick="loadPage('home'); return false;">
@@ -68,13 +67,17 @@
             <a href="#masskara" onclick="loadPage('masskara'); return false;">MassKara Festival</a>
             <a href="#lanzones" onclick="loadPage('lanzones'); return false;">Lanzones Festival</a>
 
+            <strong>November</strong>
+            <a href="#sandugo" onclick="loadPage('sandugo'); return false;">Sandugo Festival</a>
+          
+
             <strong>December</strong>
             <a href="#giantlantern" onclick="loadPage('giantlantern'); return false;">Giant Lantern Festival</a>
             <a href="#sinukwan" onclick="loadPage('sinukwan'); return false;">Sinukwan Festival</a>
           </div>
         </div>
 
-        <!-- 👤 Login / Avatar -->
+      
         <div id="userMenuContainer">
           <a href="login.html" class="login-icon" id="loginButton">
             <i class="fa fa-user"></i> Login
@@ -91,10 +94,10 @@
       </div>
     </nav>
 
-    <!-- Dynamic Content Here -->
+    
     <div id="content">Loading...</div>
 
-    <!-- Footer -->
+   
     <footer class="footer">
       <div class="footer-links">
         <a href="#home" onclick="loadPage('home'); return false;">Home</a>
@@ -119,9 +122,8 @@
       <p>&copy; 2025 A Year of Fiestas. All Rights Reserved.</p>
     </footer>
 
-    <!-- Scripts -->
+    
     <script>
-      // Page Loading and Highlighting Logic
       function loadPage(page, addToHistory = true) {
         fetch(page + '.html')
           .then(res => res.text())
@@ -186,7 +188,7 @@
         }
       }
 
-      // Hide/Show Navbar on Scroll
+      
       let lastScrollTop = 0;
       const navbar = document.querySelector('.navbar');
 
@@ -196,7 +198,7 @@
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
       });
 
-      // Session and Avatar Login Management
+       
       function setCookie(name, value, days) {
         const d = new Date();
         d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
