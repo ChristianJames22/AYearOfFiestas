@@ -30,7 +30,7 @@
   </div>
 
   <script>
-    // Function to set cookie
+    
     function setCookie(name, value, days) {
       const d = new Date();
       d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -38,7 +38,7 @@
       document.cookie = name + "=" + value + ";" + expires + ";path=/";
     }
 
-    // Function to get cookie
+    
     function getCookie(name) {
       const cname = name + "=";
       const decodedCookie = decodeURIComponent(document.cookie);
@@ -55,28 +55,28 @@
       return "";
     }
 
-    // Function to check if already logged in
+   
     function checkLogin() {
       const user = getCookie("loggedInUser");
       if (user !== "") {
-        window.location.href = "index.html"; // ✅ redirect if already logged in
+        window.location.href = "index.html"; 
       }
     }
 
-    // Run check when page loads
+
     window.onload = checkLogin;
 
-    // Handle form submit
+    
     document.getElementById("loginForm").addEventListener("submit", function (e) {
-      e.preventDefault(); // stop form from submitting normally
+      e.preventDefault(); 
 
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
 
-      // ✅ Dummy login validation (hardcoded for now)
+       
       if (email === "admin@gmail.com" && password === "123456") {
-        setCookie("loggedInUser", email, 7); // save login for 7 days
-        window.location.href = "index.html"; // redirect to home
+        setCookie("loggedInUser", email, 7); 
+        window.location.href = "index.html"; 
       } else {
         alert("Invalid email or password. Please try again.");
       }

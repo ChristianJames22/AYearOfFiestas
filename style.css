@@ -1,4 +1,4 @@
-/* Body & Base */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -22,7 +22,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: transform 0.3s ease; /* <-- ADD THIS line for smooth transition */
+  transition: transform 0.3s ease; 
 }
 
 
@@ -56,23 +56,23 @@ html, body {
   font-size: 1rem;
   padding: 10px 18px;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.05); /* ✅ Soft semi-transparent background */
+  background: rgba(255, 255, 255, 0.05);  
   border: none;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* ✅ Always elevated shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); 
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
-/* Hover Effect - lift a little higher */
+ 
 .nav-links a:hover,
 .dropbtn:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* brighter on hover */
+  background-color: rgba(255, 255, 255, 0.1);  
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* deeper shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);  
 }
 
 
-/* Default Desktop Style */
+ 
 .dropdown {
   position: relative;
 }
@@ -92,7 +92,7 @@ html, body {
 
 .dropdown-content strong {
   display: block;
-  padding: 8px 25px 4px 10px; /* top, right, bottom, left */
+  padding: 8px 25px 4px 10px;  
   font-weight: bold;
   color: #ffe600;
 }
@@ -106,7 +106,7 @@ html, body {
   display: block;
 }
 
-/* Scrollbar style */
+ 
 .dropdown-content::-webkit-scrollbar {
   width: 6px;
 }
@@ -120,7 +120,7 @@ html, body {
   border-radius: 4px;
 }
 
-/* --- Responsive --- */
+ 
 @media (max-width: 768px) {
   .dropdown {
     width: 100%;
@@ -128,7 +128,7 @@ html, body {
   }
 
   .dropdown-content {
-    position: static; /* remove absolute positioning */
+    position: static;  
     width: 100%;
     max-height: none;
     background-color: rgba(0, 0, 0, 0.95);
@@ -219,8 +219,7 @@ html, body {
 }
 
 
-/* Hero Section */
-/* Hero Container */
+ 
 .hero-container {
   display: flex;
   justify-content: space-between;
@@ -229,13 +228,13 @@ html, body {
   flex-wrap: wrap;
 }
 
-/* Hero Text */
+ 
 .hero-text {
   margin-left: 30px;
   flex: 1;
 }
 
-/* Hero Image */
+ 
 .hero-image {
   flex: 1;
   margin-top: 30px;
@@ -253,7 +252,7 @@ html, body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* Hero Section */
+
 .hero {
   text-align: left;
   padding: 0 40px;
@@ -271,16 +270,15 @@ html, body {
   max-width: 700px;
 }
 
-/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
-    align-items: center; /* Center-align on smaller screens */
+    align-items: center;   
   }
 
   .hero-text {
     margin-left: 0;
-    text-align: center; /* Center text */
+    text-align: center; 
     margin-bottom: 20px;
   }
 
@@ -288,26 +286,26 @@ html, body {
     flex: 0 0 180px;
     margin-top: 20px;
     margin-right: 0;
-    text-align: center; /* Center the image */
+    text-align: center;  
   }
 
   .hero-image img {
-    width: 300px; /* Smaller image on mobile */
+    width: 300px;  
     height: 300px;
   }
 
   .hero h1 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 2rem; 
   }
 
   .hero p {
-    font-size: 1rem; /* Adjust font size for smaller screens */
-    text-align: center; /* Center text for smaller screens */
+    font-size: 1rem; 
+    text-align: center; 
   }
 }
 
 
-/* Section Styling */
+
 .section {
   max-width: 1100px;
   margin: 40px auto;
@@ -332,7 +330,7 @@ html, body {
   text-align: justify;
 }
 
-/* Features and Festival Cards */
+
 .features, .festival-grid {
   display: flex;
   flex-wrap: wrap;
@@ -397,7 +395,7 @@ html, body {
   background-color: #ffcc00;
 }
 
-/* Gallery */
+
 .gallery {
   display: flex;
   gap: 20px;
@@ -413,7 +411,7 @@ html, body {
   border-radius: 10px;
 }
 
-/* Embed and Buttons */
+ 
 iframe {
   margin-top: 40px;
   width: 100%;
@@ -437,7 +435,7 @@ iframe {
   background-color: #ffcf00;
 }
 
-/* Login Page Background */
+ 
 .login-page {
   display: flex;
   justify-content: center;
@@ -447,19 +445,19 @@ iframe {
   background: linear-gradient(to right, #1a1b0a, #36321d);
 }
 
-/* Login Card */
+ 
 .login-card {
   display: flex;
   width: 900px;
   max-width: 95%;
-  background: #111; /* dark background */
+  background: #111; 
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   animation: fadeInUp 0.6s ease-out;
 }
 
-/* Image */
+ 
 .login-image {
   flex: 1;
   background-color: #222;
@@ -471,7 +469,7 @@ iframe {
   object-fit: cover;
 }
 
-/* Form Section */
+
 .login-form {
   flex: 1;
   padding: 40px 30px;
@@ -520,7 +518,7 @@ iframe {
   box-shadow: 0 0 0 2px rgba(255, 230, 0, 0.3);
 }
 
-/* Button */
+
 button {
   width: 100%;
   padding: 14px;
@@ -716,7 +714,7 @@ button:hover {
 .social-links a:hover {
   color: #ffffff;
 }
-/* Highlight Active Link */
+
 .nav-links a.active,
 .dropbtn.active {
   background: rgba(255, 230, 0, 0.888);
@@ -730,7 +728,7 @@ button:hover {
   color: #ffe600;
 }
 
-/* Navbar */
+
 .dropbtn {
   text-decoration: none;
   color: white;
@@ -800,24 +798,24 @@ button:hover {
   margin-left: auto;
 }
 
-/* 🎯 Modern Dropdown Content Updated with Scroll */
+
 .dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  margin-left: 12px; /* 🔥 Space between button and dropdown */
+  margin-left: 12px; 
   min-width: 220px;
-  max-height: 400px; /* 🔥 Limit height */
-  overflow-y: auto; /* 🔥 Enable vertical scroll if needed */
-  background: #111; /* Dark background */
+  max-height: 400px;
+  overflow-y: auto; 
+  background: #111; 
   border-radius: 8px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
   z-index: 999;
   flex-direction: column;
 }
 
-/* Style scrollbar */
+
 .dropdown-content::-webkit-scrollbar {
   width: 6px;
 }
@@ -831,7 +829,7 @@ button:hover {
   border-radius: 3px;
 }
 
-/* Dropdown Items */
+ 
 .dropdown-content a {
   padding: 12px 18px;
   color: white;
@@ -846,7 +844,7 @@ button:hover {
   color: #ffe600;
 }
 
-/* Show Dropdown */
+ 
 .dropdown.active .dropdown-content {
   display: flex;
 }
@@ -869,7 +867,7 @@ button:hover {
     max-width: 90%;
   }
 }
-/* Responsive for Festival Grid and Cards */
+ 
 @media (max-width: 768px) {
   .festival-grid {
     flex-direction: column;
